@@ -1,10 +1,4 @@
-@font-face {
-   font-family: "Museo Sans Cyrl 500";
-   src: url("../assets/fonts/MuseoSansCyrl-500.eot");
-   src: local("MuseoSansCyrl-500"), url("../assets/fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype");
-   font-weight: normal;
-   font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
 
 @font-face {
    font-family: "icomoon";
