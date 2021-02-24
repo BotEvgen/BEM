@@ -1,4 +1,40 @@
 @font-face {
-   font-family: "Roboto";
-   src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+   font-family: "Museo500";
+   src: url("../assets/fonts/MuseoSansCyrl-500.eot");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "icomoon";
+   src: url("../assets/fonts/icomoon.ttf?oh03mh") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: "icomoon" !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+   content: "\ea90";
+}
+.icon-instagram:before {
+   content: "\ea92";
+}
+.icon-pinterest2:before {
+   content: "\ead2";
 }
