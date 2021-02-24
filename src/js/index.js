@@ -1,1 +1,1 @@
-import '../styles/styles.css'
+import '../sass/_style.sass'
