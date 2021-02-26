@@ -32,7 +32,8 @@
          display: flex
          justify-content: center
          align-items: center
-
+   .review
+      padding-left: 3px
 @media (max-width: 767px)
    .header
       &__phone
@@ -67,6 +68,9 @@
          padding: 0 7px
       &__tab
          width: 33%
+   .review
+      &__block
+         margin-left: 40px
 
 @media (max-width: 575px)
    .header
@@ -108,6 +112,7 @@
       &__descr
          font-size: 16px
    .catalog
+      padding-bottom: 50px
       &__tabs
          flex-direction: column
          margin-top: 20px
@@ -125,3 +130,19 @@
             height: 150px
       &__content
          margin-top: 10px
+
+@media (max-width: 425px)
+   .review
+      &__item
+         flex-direction: column
+         align-items: center
+         justify-content: center
+      &__img
+         display: block
+         top: -10px
+      &__block
+         margin: 0 7px
+      &__name
+         display: block
+         margin: 0 auto
+         text-align: center
