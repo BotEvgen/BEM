@@ -35,15 +35,13 @@
       padding-left: 3px
 
    .footer
-      &__social
       &__info
          width: 250px
          height: 190px
          padding: 10px
-      &__phone
-      &__adr
-      &__social
-         &-item
+   .pageup
+      right: 20px
+
 @media (max-width: 767px)
    .header
       &__phone
@@ -166,6 +164,11 @@
             height: 30px
             span
                font-size: 10px
+   .modal
+      width: 270px
+      &__close
+         font-size: 35px
+         right: -27px
 
 @media (max-width: 425px)
    .review
@@ -182,3 +185,14 @@
          display: block
          margin: 0 auto
          text-align: center
+
+   .modal
+      width: 200px
+      &__close
+         font-size: 25px
+         right: -27px
+
+@media (max-width: 374px)
+   .modal
+      &__close
+         right: -20px
