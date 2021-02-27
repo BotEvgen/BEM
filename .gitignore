@@ -5,6 +5,7 @@
 package.json
 package-lock.json
 webpack.config.js
+/src/mailer
 # testing
 /coverage
 

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <section class="promo">
+   <section id="up" class="promo">
       <div class="container">
          <header class="header">
             <a href="#" class="header__logo">
@@ -61,20 +61,23 @@
          <div class="advantages__wrapper">
             <div class="advantages__block">
                <div class="advantages__logo">
-                  <img src="assets/icons/cup.png" alt="">
+                  <img src="assets/icons/cup.png" alt="" class="advantages__icon_cup">
                </div>
                <div class="advantages__title">Делимся опытом</div>
                <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают
                   полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
             </div>
             <div class="advantages__block">
-               <div class="advantages__logo"><img src="assets/icons/heart.png" alt=""></div>
+               <div class="advantages__logo"><img src="assets/icons/heart.png" alt=""
+                     class="advantages__icon_heartbeat">
+               </div>
                <div class="advantages__title">Заботимся о здоровье</div>
                <div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему
                   здоровью и были в радость Вам и Вашим близким!</div>
             </div>
             <div class="advantages__block">
-               <div class="advantages__logo"><img src="assets/icons/shoe.png" alt=""></div>
+               <div class="advantages__logo"><img src="assets/icons/shoe.png" alt="" class="advantages__icon_shoes">
+               </div>
                <div class="advantages__title">Учим бегать</div>
                <div class="advantages__descr">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой
                   бега
@@ -92,10 +95,10 @@
             Просто заполните форму заявки и мы перезвоним вам в течении 10 минут
          </div>
          <div class="consultation__feed-wrapper">
-            <form  id='consultation-form' class="feed-form" action="#" method="POST">
-               <input name="name"  placeholder="Ваше имя" type="text">
-               <input name="phone"  placeholder="Ваш телефон" type="number">
-               <input name="email"  placeholder="Ваш E-mail" type="email">
+            <form id='consultation-form' class="feed-form" action="#" method="POST">
+               <input name="name" placeholder="Ваше имя" type="text">
+               <input name="phone" placeholder="Ваш телефон">
+               <input name="email" placeholder="Ваш E-mail" type="email">
                <button class="button button_submit">Заказать консультацию</button>
             </form>
          </div>
@@ -633,7 +636,7 @@
          <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
          <form class="feed-form feed-form_mt25" action="#" method="POST">
             <input name="name" required placeholder="Ваше имя" type="text">
-            <input name="phone" required placeholder="Ваш телефон" type="number">
+            <input name="phone" required placeholder="Ваш телефон">
             <input name="email" required placeholder="Ваш E-mail" type="email">
             <button class="button button_submit">Заказать консультацию</button>
          </form>
@@ -644,7 +647,7 @@
          <div class="modal__descr">Пульсометр Polar FT1</div>
          <form class="feed-form feed-form_mt25" action="#" method="POST">
             <input name="name" required placeholder="Ваше имя" type="text">
-            <input name="phone" required placeholder="Ваш телефон" type="number">
+            <input name="phone" required placeholder="Ваш телефон">
             <input name="email" required placeholder="Ваш E-mail" type="email">
             <button class="button button_submit">Купить</button>
          </form>
@@ -656,6 +659,8 @@
 
       </div>
    </div>
+   <a href="#up" class="pageup">
+      <img src="assets/icons/chevron-circle-up-solid.svg" alt=""></a>
 </body>
 
 </html>

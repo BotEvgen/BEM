@@ -1,5 +1,6 @@
 import '../js/jquery-3.5.1.min'
 import '../js/jquery.validate.min'
+import '../js/jquery.maskedinput.min'
 import '../sass/_style.sass'
 import '../styles/fonts.css'
 import '../styles/slick.css'
@@ -78,5 +79,36 @@ $(document).ready(function () {
    validateForms('#consultation-form');
    validateForms('#order form');
    validateForms('#consultation form');
+
+   $('input[name=phone]').mask("+7 (999) 999-99-99")
+
+   $('form').submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+         type: "POST",
+         url: "mailer/smart.php",
+         data: $(this).serialize()
+      }).done(function () {
+         $(this).find("input").val("");
+         $('#consultation,#order').fadeOut()
+         $('.overlay,#thanks').fadeIn('slow')
+         $('form').trigger('reset');
+      })
+      return false;
+   });
+   // Nice scroll
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 1600) {
+         $('.pageup').fadeIn();
+      } else {
+         $('.pageup').fadeOut();
+      }
+   });
+
+   $("a[href^='#']").click(function () {
+      const _href = $(this).attr("href");
+      $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+      return false;
+   });
 });
 
