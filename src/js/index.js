@@ -1,10 +1,12 @@
 import '../js/jquery-3.5.1.min'
 import '../js/jquery.validate.min'
 import '../js/jquery.maskedinput.min'
+import WOW from 'wow.js'
 import '../sass/_style.sass'
 import '../styles/fonts.css'
 import '../styles/slick.css'
 import '../js/slick.min'
+import '../styles/style.css'
 
 $(document).ready(function () {
    $('.carousel__inner').slick({
@@ -110,5 +112,8 @@ $(document).ready(function () {
       $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
       return false;
    });
+
+   // Animate.css
+   new WOW().init();
 });
 
