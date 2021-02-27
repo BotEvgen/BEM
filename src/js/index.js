@@ -1,4 +1,5 @@
 import '../js/jquery-3.5.1.min'
+import '../js/jquery.validate.min'
 import '../sass/_style.sass'
 import '../styles/fonts.css'
 import '../styles/slick.css'
@@ -53,5 +54,29 @@ $(document).ready(function () {
          $('.overlay,#order').fadeIn('slow');
       })
    });
+
+   function validateForms(form) {
+      $(form).validate({
+         rules: {
+            name: "required",
+            phone: "required",
+            email: {
+               required: true,
+               email: true
+            }
+         },
+         messages: {
+            name: "Пожалуйста, введите своё имя",
+            phone: "Пожалуйста, введите свой номер телефона",
+            email: {
+               required: "Пожалуйста, введите свою почту",
+               email: "Проверьте свой адрес!"
+            }
+         }
+      });
+   };
+   validateForms('#consultation-form');
+   validateForms('#order form');
+   validateForms('#consultation form');
 });
 
