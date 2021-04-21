@@ -1,11 +1,7 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
-package.json
 package-lock.json
-webpack.config.js
-/src/mailer
 # testing
 /coverage
 
